@@ -1,21 +1,32 @@
---- statserial-1.1/Makefile.orig	Tue Aug 29 17:33:48 1995
-+++ statserial-1.1/Makefile	Tue Aug 29 17:34:04 1995
-@@ -10,14 +10,14 @@
- LDFLAGS = -s -N
+diff -uNr statserial-1.1.orig/Makefile statserial-1.1/Makefile
+--- statserial-1.1.orig/Makefile	Sun Dec 18 03:16:09 1994
++++ statserial-1.1/Makefile	Thu Dec 21 00:06:05 2000
+@@ -7,13 +7,13 @@
+ 
+ # for production code
+ CFLAGS	= -Wall -O3 -fomit-frame-pointer
+-LDFLAGS = -s -N
++LDFLAGS = 
  
  statserial:	statserial.o
 -	$(LD) $(LDFLAGS) -o statserial statserial.o -lcurses
-+	$(LD) $(LDFLAGS) -o statserial statserial.o -lncurses
++	$(LD) $(LDFLAGS) -o statserial statserial.o -lncurses -ltinfo
  
  statserial.o: statserial.c
 -	$(CC) $(CFLAGS) -c statserial.c
-+	$(CC) -I/usr/include/ncurses $(CFLAGS) -c statserial.c
++	$(CC) $(CFLAGS) -c -I/usr/include/ncurses statserial.c
  
  install: statserial
--	install -m 555 statserial /usr/local/bin/statserial
--	install -m 444 statserial.1 /usr/local/man/man1/statserial.1
-+	install -m 555 statserial /usr/bin/statserial
-+	install -m 444 statserial.1 /usr/man/man1/statserial.1
+ 	install -m 555 statserial /usr/local/bin/statserial
+diff -uNr statserial-1.1.orig/statserial.c statserial-1.1/statserial.c
+--- statserial-1.1.orig/statserial.c	Sun Dec 18 03:24:30 1994
++++ statserial-1.1/statserial.c	Thu Dec 21 00:01:27 2000
+@@ -42,7 +42,7 @@
  
- clean:
- 	$(RM) statserial statserial.o core *~
+ /* global variables */
+ char device[255];                          /* name of device to open */
+-const char *defaultDevice = "/dev/cua1";   /* default device if none specified on command line */
++const char *defaultDevice = "/dev/modem";   /* default device if none specified on command line */
+ int n_option = 0;                          /* set if -n option is used */
+ int d_option = 0;                          /* set if -d option is used */
+ int x_option = 0;                          /* set if -x option is used */
