@@ -14,6 +14,7 @@ Release:	31
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
+# Source0-md5:	bcd90fb0881c64024396bf1070de7e64
 Patch0:		%{name}-config.patch
 Patch1:		%{name}-dev.patch
 BuildRequires:	ncurses-devel >= 5.0
