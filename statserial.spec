@@ -1,11 +1,16 @@
 Summary:	A tool which displays the status of serial port modem lines
 Summary(de):	zeigt den Status der seriellen Leitungen in einem Terminal an
+Summary(es):	EnseЯa el estado de una lМnea serial en un terminal
 Summary(fr):	Affiche l'Иtat des lignes sИrie dans un terminal
 Summary(pl):	NarzЙdzie wy╤wietlaj╠ce stan linii modemowych portu szeregowego
+Summary(pt_BR):	Mostra o estado de uma linha serial em um terminal
+Summary(ru):	Показывает состояние последовательных портов системы
 Summary(tr):	Bir uГbirimde seri hatlarЩn durumlarЩnЩ gЖsterir
+Summary(uk):	В╕добража╓ статус сер╕альних порт╕в системи
+Summary(zh_CN):	р╩╦Жотй╬╢╝©з╣Вжф╫Б╣ВфВв╢л╛╣д╧╓╬ъ.
 Name:		statserial
 Version:	1.1
-Release:	24
+Release:	31
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
@@ -29,6 +34,11 @@ Standard-9-Pin oder 25-Pin seriellen Port an und meldet den Status der
 Handshaking- Leitungen. NЭtzlich zum Debuggen von Problemen mit
 seriellen Ports oder Modems.
 
+%description -l es
+Statserial enseЯa una tabla de las seЯales en un puerto serial padrСn
+de 9 o 25 pinos y indica el estado de las lМneas de handshaking. Puede
+ser Зtil en la depuraciСn de problemas con puertos seriales o mСdems.
+
 %description -l fr
 Statserial affiche une table des signaux sur un port sИrie standard 9
 ou 25 broches, et indique l'Иtat des lignes reliИes. il peut Йtre
@@ -40,11 +50,27 @@ standardowym 9 lub 25 pinowym zЁ╠czu portu szeregowego i pokazuj╠cym
 aktualny stan linii steruj╠cych przepЁywem. Statserial jest u©yteczny
 przy usuwaniu bЁЙdСw konfiguracji portu szeregowego i/lub modemu.
 
+%description -l pt_BR
+Statserial mostra uma tabela dos sinais em uma porta serial padrЦo de
+9 ou 25 pinos e indica o status das linhas de handshaking. Pode ser
+Зtil na depuraГЦo de problemas com portas seriais ou modems.
+
+%description -l ru
+Statserial выводит таблицу сигналов на стандартном последовательном
+порту DB9 или DB25 и показывает состояние сигнальных линий. Может
+пригодится для устранения проблем с последовательными портами и
+модемами.
+
 %description -l tr
 Statserial, seri baПlantЩ noktasЩ Эzerindeki iЧaretlerin bir tablosunu
 gЖsterir ve elsЩkЩЧma hatlarЩnЩn durumunu belirtir. Seri baПlantЩ
 noktalarЩ ya da modemlerle ilgili hatalarЩ belirlemekte
 kullanЩlabilir.
+
+%description -l uk
+Statserial в╕добража╓ таблицю сигнал╕в на стандартному сер╕альному
+порту DB9 чи DB25 та статус сигнальних л╕н╕й. Може бути корисним при
+пошуку причини проблем з сер╕альними портами та модемами.
 
 %prep
 %setup -q
@@ -63,13 +89,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install statserial   $RPM_BUILD_ROOT%{_bindir}/statserial
 install statserial.1 $RPM_BUILD_ROOT%{_mandir}/man1/statserial.1
 
-gzip -9nf README ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README ChangeLog
 %attr(755,root,root) %{_bindir}/statserial
 %{_mandir}/man1/statserial.1*
