@@ -18,15 +18,3 @@ diff -uNr statserial-1.1.orig/Makefile statserial-1.1/Makefile
  
  install: statserial
  	install -m 555 statserial /usr/local/bin/statserial
-diff -uNr statserial-1.1.orig/statserial.c statserial-1.1/statserial.c
---- statserial-1.1.orig/statserial.c	Sun Dec 18 03:24:30 1994
-+++ statserial-1.1/statserial.c	Thu Dec 21 00:01:27 2000
-@@ -42,7 +42,7 @@
- 
- /* global variables */
- char device[255];                          /* name of device to open */
--const char *defaultDevice = "/dev/cua1";   /* default device if none specified on command line */
-+const char *defaultDevice = "/dev/modem";   /* default device if none specified on command line */
- int n_option = 0;                          /* set if -n option is used */
- int d_option = 0;                          /* set if -d option is used */
- int x_option = 0;                          /* set if -x option is used */
