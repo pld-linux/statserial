@@ -1,5 +1,8 @@
 Summary:	A tool which displays the status of serial port modem lines
+Summary(de):	zeigt den Status der seriellen Leitungen in einem Terminal an
+Summary(fr):	Affiche l'état des lignes série dans un terminal
 Summary(pl):	Narzêdzie wy¶wietlaj±ce stan linii modemowych portu szeregowego
+Summary(tr):	Bir uçbirimde seri hatlarýn durumlarýný gösterir
 Name:		statserial
 Version:	1.1
 Release:	21
@@ -22,11 +25,28 @@ and/or modem problems.
 Install the statserial package if you need a tool to help debug serial
 port or modem problems.
 
+%description -l de
+Statserial zeigt eine Tabelle mit den Signalen auf einem
+Standard-9-Pin oder 25-Pin seriellen Port an und meldet den Status der
+Handshaking- Leitungen. Nützlich zum Debuggen von Problemen mit
+seriellen Ports oder Modems.
+
+%description -l fr
+Statserial affiche une table des signaux sur un port série standard 9
+ou 25 broches, et indique l'état des lignes reliées. il peut être
+utile pour déboguer des problèmes de port série ou de modem.
+
 %description -l pl
 Statserial jest narzêdziem wy¶wietlaj±cym tabelê sygna³ów w
 standardowym 9 lub 25 pinowym z³±czu portu szeregowego i pokazuj±cym
 aktualny stan linii steruj±cych przep³ywem. Statserial jest u¿yteczny
 przy usuwaniu b³êdów konfiguracji portu szeregowego i/lub modemu.
+
+%description -l tr
+Statserial, seri baðlantý noktasý üzerindeki iþaretlerin bir tablosunu
+gösterir ve elsýkýþma hatlarýnýn durumunu belirtir. Seri baðlantý
+noktalarý ya da modemlerle ilgili hatalarý belirlemekte
+kullanýlabilir.
 
 %prep
 %setup -q
