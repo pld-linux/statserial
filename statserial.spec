@@ -6,7 +6,7 @@ Copyright: BSD
 Group: Applications/System
 Source: ftp://sunsite.unc.edu/pub/Linux/system/serial/statserial-1.1.tar.gz
 Patch: statserial-1.1-config.patch
-BuildRoot: /var/tmp/%{name}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The statserial utility displays a table of the signals on a standard
