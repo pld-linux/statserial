@@ -1,14 +1,15 @@
-Summary:	A tool which displays the status of serial port modem lines.
+Summary:	A tool which displays the status of serial port modem lines
 Summary(pl):	Narzêdzie wy¶wietlaj±ce stan linii modemowych portu szeregowego
 Name:		statserial
 Version:	1.1
-Release:	14
+Release:	21
 License:	BSD
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
-Patch0:		%{name}-1.1-config.patch
+Patch0:		%{name}-config.patch
+Patch1:		%{name}-dev.patch
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,10 +30,11 @@ przy usuwaniu b³êdów konfiguracji portu szeregowego i/lub modemu.
 
 %prep
 %setup -q
-%patch -p1 -b .config
+%patch0 -p1
+%patch1 -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
