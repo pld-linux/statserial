@@ -10,7 +10,7 @@ Summary(uk):	В╕добража╓ статус сер╕альних порт╕в системи
 Summary(zh_CN):	р╩╦Жотй╬╢╝©з╣Вжф╫Б╣ВфВв╢л╛╣д╧╓╬ъ
 Name:		statserial
 Version:	1.1
-Release:	31
+Release:	32
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
