@@ -22,7 +22,7 @@ port or modem problems.
 %patch -p1 -b .config
 
 %build
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
