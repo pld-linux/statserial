@@ -72,6 +72,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc *.gz
 %attr(755,root,root) %{_bindir}/statserial
 %{_mandir}/man1/statserial.1*
-%doc {README,ChangeLog}.gz
