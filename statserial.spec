@@ -7,7 +7,7 @@ Summary(pt_BR):	Mostra o estado de uma linha serial em um terminal
 Summary(ru):	Показывает состояние последовательных портов системы
 Summary(tr):	Bir uГbirimde seri hatlarЩn durumlarЩnЩ gЖsterir
 Summary(uk):	В╕добража╓ статус сер╕альних порт╕в системи
-Summary(zh_CN):	р╩╦Жотй╬╢╝©з╣Вжф╫Б╣ВфВв╢л╛╣д╧╓╬ъ.
+Summary(zh_CN):	р╩╦Жотй╬╢╝©з╣Вжф╫Б╣ВфВв╢л╛╣д╧╓╬ъ
 Name:		statserial
 Version:	1.1
 Release:	31
