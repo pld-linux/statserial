@@ -5,7 +5,7 @@ Summary(pl):	Narzêdzie wy¶wietlaj±ce stan linii modemowych portu szeregowego
 Summary(tr):	Bir uçbirimde seri hatlarýn durumlarýný gösterir
 Name:		statserial
 Version:	1.1
-Release:	23
+Release:	24
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
