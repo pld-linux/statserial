@@ -5,7 +5,7 @@ Summary(pl):	Narzêdzie wy¶wietlaj±ce stan linii modemowych portu szeregowego
 Summary(tr):	Bir uçbirimde seri hatlarýn durumlarýný gösterir
 Name:		statserial
 Version:	1.1
-Release:	22
+Release:	23
 License:	BSD
 Group:		Applications/System
 Group(de):	Applikationen/System
@@ -56,7 +56,7 @@ sed 's/CFLAGS.*=.*//' Makefile > Makefile.new
 mv -f Makefile.new Makefile
 
 %build
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
