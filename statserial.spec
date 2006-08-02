@@ -81,7 +81,11 @@ sed 's/CFLAGS.*=.*//' Makefile > Makefile.new
 mv -f Makefile.new Makefile
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	LD="%{__cc}" \
+	LDFLAGS="%{rpmldflags}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
