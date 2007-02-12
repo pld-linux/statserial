@@ -1,13 +1,13 @@
 Summary:	A tool which displays the status of serial port modem lines
-Summary(de.UTF-8):   zeigt den Status der seriellen Leitungen in einem Terminal an
-Summary(es.UTF-8):   Enseña el estado de una línea serial en un terminal
-Summary(fr.UTF-8):   Affiche l'état des lignes série dans un terminal
-Summary(pl.UTF-8):   Narzędzie wyświetlające stan linii modemowych portu szeregowego
-Summary(pt_BR.UTF-8):   Mostra o estado de uma linha serial em um terminal
-Summary(ru.UTF-8):   Показывает состояние последовательных портов системы
-Summary(tr.UTF-8):   Bir uçbirimde seri hatların durumlarını gösterir
-Summary(uk.UTF-8):   Відображає статус серіальних портів системи
-Summary(zh_CN.UTF-8):   一个显示串口调制解调器状态的工具
+Summary(de.UTF-8):	zeigt den Status der seriellen Leitungen in einem Terminal an
+Summary(es.UTF-8):	Enseña el estado de una línea serial en un terminal
+Summary(fr.UTF-8):	Affiche l'état des lignes série dans un terminal
+Summary(pl.UTF-8):	Narzędzie wyświetlające stan linii modemowych portu szeregowego
+Summary(pt_BR.UTF-8):	Mostra o estado de uma linha serial em um terminal
+Summary(ru.UTF-8):	Показывает состояние последовательных портов системы
+Summary(tr.UTF-8):	Bir uçbirimde seri hatların durumlarını gösterir
+Summary(uk.UTF-8):	Відображає статус серіальних портів системи
+Summary(zh_CN.UTF-8):	一个显示串口调制解调器状态的工具
 Name:		statserial
 Version:	1.1
 Release:	32
