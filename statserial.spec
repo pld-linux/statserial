@@ -1,13 +1,13 @@
 Summary:	A tool which displays the status of serial port modem lines
-Summary(de):	zeigt den Status der seriellen Leitungen in einem Terminal an
-Summary(es):	EnseЯa el estado de una lМnea serial en un terminal
-Summary(fr):	Affiche l'Иtat des lignes sИrie dans un terminal
-Summary(pl):	NarzЙdzie wy╤wietlaj╠ce stan linii modemowych portu szeregowego
-Summary(pt_BR):	Mostra o estado de uma linha serial em um terminal
-Summary(ru):	Показывает состояние последовательных портов системы
-Summary(tr):	Bir uГbirimde seri hatlarЩn durumlarЩnЩ gЖsterir
-Summary(uk):	В╕добража╓ статус сер╕альних порт╕в системи
-Summary(zh_CN):	р╩╦Жотй╬╢╝©з╣Вжф╫Б╣ВфВв╢л╛╣д╧╓╬ъ
+Summary(de.UTF-8):   zeigt den Status der seriellen Leitungen in einem Terminal an
+Summary(es.UTF-8):   Enseц╠a el estado de una lц╜nea serial en un terminal
+Summary(fr.UTF-8):   Affiche l'ц╘tat des lignes sц╘rie dans un terminal
+Summary(pl.UTF-8):   Narzд≥dzie wyе⌡wietlajд┘ce stan linii modemowych portu szeregowego
+Summary(pt_BR.UTF-8):   Mostra o estado de uma linha serial em um terminal
+Summary(ru.UTF-8):   п÷п╬п╨п╟п╥я▀п╡п╟п╣я┌ я│п╬я│я┌п╬я▐п╫п╦п╣ п©п╬я│п╩п╣п╢п╬п╡п╟я┌п╣п╩я▄п╫я▀я┘ п©п╬я─я┌п╬п╡ я│п╦я│я┌п╣п╪я▀
+Summary(tr.UTF-8):   Bir uц╖birimde seri hatlarд╠n durumlarд╠nд╠ gц╤sterir
+Summary(uk.UTF-8):   п▓я√п╢п╬п╠я─п╟п╤п╟я■ я│я┌п╟я┌я┐я│ я│п╣я─я√п╟п╩я▄п╫п╦я┘ п©п╬я─я┌я√п╡ я│п╦я│я┌п╣п╪п╦
+Summary(zh_CN.UTF-8):   Д╦─Д╦╙Ф≤╬Г╓╨Д╦╡Е▐ёХ╟┐Е┬╤Х╖ёХ╟┐Е≥╗Г┼╤Ф─│Г └Е╥╔Е┘╥
 Name:		statserial
 Version:	1.1
 Release:	32
@@ -29,49 +29,49 @@ and/or modem problems.
 Install the statserial package if you need a tool to help debug serial
 port or modem problems.
 
-%description -l de
+%description -l de.UTF-8
 Statserial zeigt eine Tabelle mit den Signalen auf einem
 Standard-9-Pin oder 25-Pin seriellen Port an und meldet den Status der
-Handshaking- Leitungen. NЭtzlich zum Debuggen von Problemen mit
+Handshaking- Leitungen. Nц╪tzlich zum Debuggen von Problemen mit
 seriellen Ports oder Modems.
 
-%description -l es
-Statserial enseЯa una tabla de las seЯales en un puerto serial padrСn
-de 9 o 25 pinos y indica el estado de las lМneas de handshaking. Puede
-ser Зtil en la depuraciСn de problemas con puertos seriales o mСdems.
+%description -l es.UTF-8
+Statserial enseц╠a una tabla de las seц╠ales en un puerto serial padrцЁn
+de 9 o 25 pinos y indica el estado de las lц╜neas de handshaking. Puede
+ser ц╨til en la depuraciцЁn de problemas con puertos seriales o mцЁdems.
 
-%description -l fr
-Statserial affiche une table des signaux sur un port sИrie standard 9
-ou 25 broches, et indique l'Иtat des lignes reliИes. il peut Йtre
-utile pour dИboguer des problХmes de port sИrie ou de modem.
+%description -l fr.UTF-8
+Statserial affiche une table des signaux sur un port sц╘rie standard 9
+ou 25 broches, et indique l'ц╘tat des lignes reliц╘es. il peut ц╙tre
+utile pour dц╘boguer des problц╗mes de port sц╘rie ou de modem.
 
-%description -l pl
-Statserial jest narzЙdziem wy╤wietlaj╠cym tabelЙ sygnaЁСw w
-standardowym 9 lub 25 pinowym zЁ╠czu portu szeregowego i pokazuj╠cym
-aktualny stan linii steruj╠cych przepЁywem. Statserial jest u©yteczny
-przy usuwaniu bЁЙdСw konfiguracji portu szeregowego i/lub modemu.
+%description -l pl.UTF-8
+Statserial jest narzд≥dziem wyе⌡wietlajд┘cym tabelд≥ sygnaе┌цЁw w
+standardowym 9 lub 25 pinowym zе┌д┘czu portu szeregowego i pokazujд┘cym
+aktualny stan linii sterujд┘cych przepе┌ywem. Statserial jest uе╪yteczny
+przy usuwaniu bе┌д≥dцЁw konfiguracji portu szeregowego i/lub modemu.
 
-%description -l pt_BR
-Statserial mostra uma tabela dos sinais em uma porta serial padrЦo de
+%description -l pt_BR.UTF-8
+Statserial mostra uma tabela dos sinais em uma porta serial padrцёo de
 9 ou 25 pinos e indica o status das linhas de handshaking. Pode ser
-Зtil na depuraГЦo de problemas com portas seriais ou modems.
+ц╨til na depuraц╖цёo de problemas com portas seriais ou modems.
 
-%description -l ru
-Statserial выводит таблицу сигналов на стандартном последовательном
-порту DB9 или DB25 и показывает состояние сигнальных линий. Может
-пригодится для устранения проблем с последовательными портами и
-модемами.
+%description -l ru.UTF-8
+Statserial п╡я▀п╡п╬п╢п╦я┌ я┌п╟п╠п╩п╦я├я┐ я│п╦пЁп╫п╟п╩п╬п╡ п╫п╟ я│я┌п╟п╫п╢п╟я─я┌п╫п╬п╪ п©п╬я│п╩п╣п╢п╬п╡п╟я┌п╣п╩я▄п╫п╬п╪
+п©п╬я─я┌я┐ DB9 п╦п╩п╦ DB25 п╦ п©п╬п╨п╟п╥я▀п╡п╟п╣я┌ я│п╬я│я┌п╬я▐п╫п╦п╣ я│п╦пЁп╫п╟п╩я▄п╫я▀я┘ п╩п╦п╫п╦п╧. п°п╬п╤п╣я┌
+п©я─п╦пЁп╬п╢п╦я┌я│я▐ п╢п╩я▐ я┐я│я┌я─п╟п╫п╣п╫п╦я▐ п©я─п╬п╠п╩п╣п╪ я│ п©п╬я│п╩п╣п╢п╬п╡п╟я┌п╣п╩я▄п╫я▀п╪п╦ п©п╬я─я┌п╟п╪п╦ п╦
+п╪п╬п╢п╣п╪п╟п╪п╦.
 
-%description -l tr
-Statserial, seri baПlantЩ noktasЩ Эzerindeki iЧaretlerin bir tablosunu
-gЖsterir ve elsЩkЩЧma hatlarЩnЩn durumunu belirtir. Seri baПlantЩ
-noktalarЩ ya da modemlerle ilgili hatalarЩ belirlemekte
-kullanЩlabilir.
+%description -l tr.UTF-8
+Statserial, seri baд÷lantд╠ noktasд╠ ц╪zerindeki iе÷aretlerin bir tablosunu
+gц╤sterir ve elsд╠kд╠е÷ma hatlarд╠nд╠n durumunu belirtir. Seri baд÷lantд╠
+noktalarд╠ ya da modemlerle ilgili hatalarд╠ belirlemekte
+kullanд╠labilir.
 
-%description -l uk
-Statserial в╕добража╓ таблицю сигнал╕в на стандартному сер╕альному
-порту DB9 чи DB25 та статус сигнальних л╕н╕й. Може бути корисним при
-пошуку причини проблем з сер╕альними портами та модемами.
+%description -l uk.UTF-8
+Statserial п╡я√п╢п╬п╠я─п╟п╤п╟я■ я┌п╟п╠п╩п╦я├я▌ я│п╦пЁп╫п╟п╩я√п╡ п╫п╟ я│я┌п╟п╫п╢п╟я─я┌п╫п╬п╪я┐ я│п╣я─я√п╟п╩я▄п╫п╬п╪я┐
+п©п╬я─я┌я┐ DB9 я┤п╦ DB25 я┌п╟ я│я┌п╟я┌я┐я│ я│п╦пЁп╫п╟п╩я▄п╫п╦я┘ п╩я√п╫я√п╧. п°п╬п╤п╣ п╠я┐я┌п╦ п╨п╬я─п╦я│п╫п╦п╪ п©я─п╦
+п©п╬я┬я┐п╨я┐ п©я─п╦я┤п╦п╫п╦ п©я─п╬п╠п╩п╣п╪ п╥ я│п╣я─я√п╟п╩я▄п╫п╦п╪п╦ п©п╬я─я┌п╟п╪п╦ я┌п╟ п╪п╬п╢п╣п╪п╟п╪п╦.
 
 %prep
 %setup -q
