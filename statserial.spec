@@ -10,7 +10,7 @@ Summary(uk.UTF-8):	Відображає статус серіальних пор
 Summary(zh_CN.UTF-8):	一个显示串口调制解调器状态的工具
 Name:		statserial
 Version:	1.1
-Release:	36
+Release:	37
 License:	BSD
 Group:		Applications/System
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
