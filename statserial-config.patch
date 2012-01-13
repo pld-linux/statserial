@@ -10,7 +10,7 @@ diff -uNr statserial-1.1.orig/Makefile statserial-1.1/Makefile
  
  statserial:	statserial.o
 -	$(LD) $(LDFLAGS) -o statserial statserial.o -lcurses
-+	$(LD) $(LDFLAGS) -o statserial statserial.o -lncurses -ltinfo
++	$(LD) $(LDFLAGS) -o statserial statserial.o -lncurses
  
  statserial.o: statserial.c
 -	$(CC) $(CFLAGS) -c statserial.c
