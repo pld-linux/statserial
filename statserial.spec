@@ -75,8 +75,8 @@ Statserial відображає таблицю сигналів на станд�
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 sed 's/CFLAGS.*=.*//' Makefile > Makefile.new
 mv -f Makefile.new Makefile
 
